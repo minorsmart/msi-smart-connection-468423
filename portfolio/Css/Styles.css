@@ -1,0 +1,11 @@
+.introductiebox{   
+    box-sizing: border-box center;
+    content: center;
+}
+
+.SmartMe{
+    font-family: Arial, Helvetica, sans-serif;
+    font: size 16px;
+    font-weight:normal;
+    box-sizing: border-box center;
+}
