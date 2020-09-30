@@ -1,0 +1,41 @@
+.introductiebox{   
+    box-sizing: border-box center;
+    content: center;
+
+    
+}
+
+
+.containerSmartMe{
+    box-sizing: border-box center;
+    content: center;
+    width: 80%;
+    margin:auto;
+    overflow:hidden;
+
+}
+
+.SmartMe{
+    padding:  center;
+}
+
+#main-header{
+background-color: lightgrey;
+
+}
+
+#buttonterugnaarhome{
+    background-color:grey;
+    color:#fff;
+    padding: left;
+    width: 200px;
+    
+
+}
+
+.containerPlantWaterSystem{
+    background-color: black;
+
+
+
+}
