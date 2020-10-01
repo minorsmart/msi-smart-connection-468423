@@ -4,7 +4,7 @@ var auth_token = 'pJQgtU0eLTE6HxNZA2l_sAkg6JnuQzky';
 
 function get_pin(pin, element) {
 
-fetch('http://blynk-cloud.com/' + auth_token + '/get/' + pin)
+fetch('https://blynk-cloud.com/' + auth_token + '/get/' + pin)
 .then(response => response.json())
 .then(data => {
   window[pin] = data;
