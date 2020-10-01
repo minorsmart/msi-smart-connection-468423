@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #fff;
+    text-shadow: .1em .1em 0 rgba(0,0,0,0.3);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+h1 {
+    margin: 0 auto;
+    font-size: 2.2em;
+    text-align: center;
+    color: #fff;
+    font-size: 5em;
+</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19</title>
+</head>
+<body>
+<div>
+    <h1>
+Covid-19 numbers in the
+<div id="land"></div>
+</h1>
+    Datum:
+    <div id="datum"></div>
+    Totaal aantal doden:
+    <div id="TotalDeaths"></div>
+    Nieuwe doden: 
+    <div id="NewDeaths"></div>
+</div>
+
+  <script lang="text/javascript">
+    fetch('https://api.covid19api.com/summary')
+    .then(function(resp) { return resp.json() }) //Convert data to json
+    .then(function(data) {
+    console.log(data);
+    console.log(data.Countries[120].Country);
+    console.log(data.Countries[120].TotalDeaths);
+    console.log(data.Countries[120].NewDeaths);
+    document.getElementById("land").innerHTML = (data.Countries[120].Country);
+    document.getElementById("datum").innerHTML = (data.Countries[120].Date);
+    document.getElementById("NewDeaths").innerHTML = (data.Countries[120].NewDeaths);
+    document.getElementById("TotalDeaths").innerHTML = (data.Countries[120].TotalDeaths);
+    })
+    .catch(function() { //catch any errors 
+    });
+</script>  
+</body>
+</html>
