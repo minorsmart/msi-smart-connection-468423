@@ -1,3 +1,12 @@
+.Article{
+    box-sizing: border-box center;
+    content: center;
+    width: 80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+
 .introductiebox{   
     box-sizing: border-box center;
     content: center;
@@ -15,15 +24,6 @@
 
 }
 
-.SmartMe{
-    padding:  center;
-}
-
-#main-header{
-background-color: lightgrey;
-
-}
-
 #buttonterugnaarhome{
     background-color:grey;
     color:#fff;
@@ -35,7 +35,5 @@ background-color: lightgrey;
 
 .containerPlantWaterSystem{
     background-color: black;
-
-
 
 }

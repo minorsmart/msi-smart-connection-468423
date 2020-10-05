@@ -5,16 +5,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <Link rel="stylesheet" href='css/Styles.css'> 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>PlantWaterSystem</title>
 </head>
 <body>
-   <div class= "containerPlantWaterSystem">
-<div><H1>WaterPlantSystem gegevens</H1></div>
-<div id="buttonterugnaarhome">
-    <a class="button" href="../index.html">Terug naar de portfolio</a> 
-    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">Ga terug</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav nav" role="tablist">
+                
+                <a class="nav-item nav-link" data-toggle="tab" href="../index.html" id="technology-tab" role="tab" aria-controls="technology" aria-selected="true"><i class="fa fa-cog"></i> Technology</a>
+    
+            </div>
+        </div>
+    </nav>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class= "containerPlantWaterSystem">
 
     <TABLE BORDER="1">
         <TR> <TH>Sensor</TH> <TH>Waarde</TH> <TH>Eenheid</TH></TR>
@@ -24,7 +36,7 @@
         <TR> <TD>Bodemvochtigheid</TD> <TD><div id= "moistValue" style="color:black">V5</div></TD> <TD>RH</TD></TR>
         </TABLE>
 
-    </div>
+</div>
         
     
         <script>
