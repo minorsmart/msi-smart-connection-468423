@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 1.3em;
-    color: #fff;
-    text-shadow: .1em .1em 0 rgba(0,0,0,0.3);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-}
-h1 {
-    margin: 0 auto;
-    font-size: 2.2em;
-    text-align: center;
-    color: #fff;
-    font-size: 5em;
-</style>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Covid-19</title>
-</head>
-<body>
-<div>
-    <h1>
-Covid-19 numbers in the
-<div id="land"></div>
-</h1>
-    Datum:
-    <div id="datum"></div>
-    Totaal aantal doden:
-    <div id="TotalDeaths"></div>
-    Nieuwe doden: 
-    <div id="NewDeaths"></div>
-</div>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <Link rel="stylesheet" href='../Css/Styles.css'>
+    
+</head>
+<style>
+    h1 {
+        background-color: black;
+        margin: 0 auto;
+        font-size: 2.2em;
+        text-align: center;
+        color: #fff;
+        font-size: 5em;
+        } 
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">Ga terug</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav nav" role="tablist">
+                <a class="nav-item nav-link" data-toggle="tab" href="" id="connection-tab" role="tab" aria-controls="connection" aria-selected="true"><i class="fa fa-code"></i> Connection</a>
+            </div>
+        </div>
+    </nav>
+<div> <h1> Covid-19 numbers in the
+    <div id="land"></div>
+    </h1></div>
+<div id="CovidAPI">
+    <ul>
+    <li> <b>Datum:</b><div id="datum"></div></li>
+    <li> <b>Totaal aantal doden:</b>
+        <div id="TotalDeaths"></div></li>
+    <li><b>Nieuwe doden:</b> 
+        <div id="NewDeaths"></div></li>
+    </ul>
+</div>
   <script lang="text/javascript">
     fetch('https://api.covid19api.com/summary')
     .then(function(resp) { return resp.json() }) //Convert data to json
