@@ -15,6 +15,23 @@
             <span class="navbar-toggler-icon"></span>
         </button>
     
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Andere Smart Start artikelen</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="Blockchain.html">Blockchain</a>
+              <a href="Communicatieonderzoek.html">Communicatieonderzoek</a>
+              <a href="EnqueteVolwassenheidSmartManufacturing.html">Enquete Volwassenheid Smart Manufacturing</a>
+              <a href="Kruispunten.html">Kruispunten</a> 
+              <a href="Servitization_over_5_jaar.html">Servitization over 5 jaar</a> 
+              <a href="Smart_als_next_lean.html">Smart als next lean</a> 
+              <a href="Smart_Factories.html">Smart Factories</a> 
+              <a href="Smart_Manufacturing.html">Smart Manufacturing</a> 
+              <a href="SMART_Start_Voorbereiding_Workshop_Procesinrichting.html">Smart Start voorbereiding workshop procesinrichting</a> 
+              <a href="SmartMe.html">Smart me</a>
+              <a href="Verandering_Organisatie_bij _Implementatie_Smart_Industry.html">Verandering Organisatie bij Implementatie Smart Industry</a> 
+            </div>
+          </div>
+
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav nav" role="tablist">
                 <a class="nav-item nav-link" data-toggle="tab" href="" id="start-tab" role="tab" aria-controls="start" aria-selected="true"><i class="fa fa-fw fa-home"></i>Start </a>
@@ -86,6 +103,26 @@
 
         
     </div>
-    
+    <script>
+        /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
 </body>
 </html>

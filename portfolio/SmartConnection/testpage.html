@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testpagina</title>
+</head>
+<style>
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+ body{
+     background-color: lightblue;
+     content: center;
+     padding: 50px; 
+     color: black; 
+ }
+
+ h1{
+     color: darkblue;
+ }
+</style>
+<body>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">Home</a>
+          <a href="#technology">Smart Technology</a>
+          <a href="#">link 3</a>
+          <a href="../index.html">Ga terug naar mijn portfolio</a>
+        </div>
+      </div>
+
+    <h1> Welkom op mijn testpagina</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis odio, reiciendis quae quisquam ipsum mollitia non et, harum debitis doloremque quasi libero nemo eos sapiente, modi numquam enim illum alias.
+
+    </p>
+
+    <div class="tab-content container">
+      <div class="tab-pane active fade show" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <H2>Home</H2>
+          <br>
+
+          <img src="../Images/Hello world V2.0.png" 
+      width= 80%>
+         
+           <H4> Wie ben ik?</H4>
+          <p>
+              Naast het werken aan Smart Industry, is het belangrijk om te werken aan je professionele ontwikkeling. 
+              Daarom zijn er een aantal persoonlijke doelstellingen geformuleerd, waaraan ik tijdens deze minor wil werken. 
+              Daarnaast staan er een paar doelstellingen, die gedurende mijn opleiding gelden. 
+              Deze heb ik meegenomen, omdat deze minor ook onderdeel van mijn opleiding is. 
+              Voor het opstellen van de doelstellingen heb ik eerst een SWOT-analyse uitgevoerd, waarin ik mijn sterktes, zwaktes, kansen en bedreigingen benoemd heb. 
+              Vervolgens staan mijn doelstellingen beschreven.
+              <br>Klik op de link om mijn doelstellingen en de SWOT-analyse te bekijken.Hallo, mijn naam is Jan-Willem Arendsen en ben 23 jaar oud.
+              Ik woon in Hengelo Gelderland.
+              Ik volg de opleiding Technisch Bedrijfskunde aan het Saxion in Deventer en zit in het derde jaar.
+              Voor deze opleiding heb ik de MBO-opleiding Midden Kader Engineering met als richting Mechatronica gevolgd.
+              Tijdens MBO heb ik vier stages gelopen, bij verschillende bedrijven in de techniek en ook een bedrijf dat Smart Industry toepast.
+              Op dit moment volg ik de minor Smart Industry op de HAN.
+              <a css="button" href="../SmartBusiness/Introductiefilm.html">Introductie</a> 
+            </P> 
+        
+            <div class="form">
+              <p>Heeft u vragen of feedback voor mijn portfolio, zou u dan deze forum in willen vulle met uw vraag!</p>
+                       <!-- modify this form HTML and place wherever you want your form -->
+            
+                       <form
+                       action="https://formspree.io/f/mgepaena"
+                       method="POST"
+                       >
+                       <label>
+                         Your email:
+                         <input type="text" name="_replyto">
+                       </label>
+                       <label>
+                         Your message:
+                         <textarea name="message"></textarea>
+                       </label>
+       
+                       <!-- your other form fields go here -->
+       
+                       <button type="submit">Send</button>
+                       </form>
+              </div>
+      
+</div>
+
+<div class="tab-pane fade" id="technology" role="tabpanel" aria-labelledby="technology-tab">
+  <p>I'm in Technology</p>
+  <a class="button" href="../SmartTechnology/PlantWaterSystem.html">Ga naar de PlantWaterSystem</a> 
+
+
+
+</div>
+
+<div class="tab-pane fade" id="project" role="tabpanel" aria-labelledby="project-tab">
+  <p>I'm in Project</p>
+</div>
+
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>

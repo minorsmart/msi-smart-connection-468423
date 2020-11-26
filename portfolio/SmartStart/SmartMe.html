@@ -14,6 +14,24 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Andere Smart Start artikelen</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="Blockchain.html">Blockchain</a>
+              <a href="Communicatieonderzoek.html">Communicatieonderzoek</a>
+              <a href="EnqueteVolwassenheidSmartManufacturing.html">Enquete Volwassenheid Smart Manufacturing</a>
+              <a href="Kruispunten.html">Kruispunten</a> 
+              <a href="Servitization_over_5_jaar.html">Servitization over 5 jaar</a> 
+              <a href="Smart_als_next_lean.html">Smart als next lean</a> 
+              <a href="Smart_Factories.html">Smart Factories</a> 
+              <a href="Smart_Manufacturing.html">Smart Manufacturing</a> 
+              <a href="SMART_Start_Voorbereiding_Workshop_Procesinrichting.html">Smart Start voorbereiding workshop procesinrichting</a> 
+              <a href="SmartMe.html">Smart me</a>
+              <a href="Verandering_Organisatie_bij _Implementatie_Smart_Industry.html">Verandering Organisatie bij Implementatie Smart Industry</a> 
+            </div>
+          </div>
+
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav nav" role="tablist">
                 <a class="nav-item nav-link" data-toggle="tab" href="" id="start-tab" role="tab" aria-controls="start" aria-selected="true"><i class="fa fa-fw fa-home"></i>Start </a>
@@ -58,19 +76,39 @@
     <div class="doelstelling">
         <h4>Doelstellingen geformuleerd:</h4> 
     <ul>
-        <li>Voor de afstudeerstage wil ik niet meer hebben dat stagebegeleiders vinden dat ik te veel vragen stel. Op dit moment heb ik de neiging om voor veel dingen die ik doe eerst bevestiging te vragen voordat ik dit uitvoer. Dit wil ik verminderen en daardoor meer zelfstandig overkomen. Ik wil zelfstandiger worden door eerst iets zelf te proberen en niet eerst om bevestiging te vragen. Deze doelstelling wil ik behalen door tijdens stage 2 niet meer dit als tip mee te krijgen tijdens beoordeling.   
+        <li>Ik wil zelfstandiger worden. Op dit moment heb ik de neiging om voor veel dingen die ik doe eerst bevestiging te vragen voordat ik dit uitvoer. Dit wil ik verminderen en daardoor meer zelfstandig overkomen. Ik wil zelfstandiger worden door eerst iets zelf te proberen en niet eerst om bevestiging te vragen. Deze doelstelling wil ik behalen door tijdens stage 2 niet meer dit als tip mee te krijgen tijdens beoordeling. 
         </li>
         <li>Voor de afstudeerstage wil ik flexibeler worden. Als het plan wijzigt, heb ik vaak moeite om mijzelf gelijk aan te passen aan de nieuwe situatie. Ik wil voor de afstudeerstage hier beter om kunnen gaan met wijzigingen door mijn gedrag zelf te evalueren telkens na een nieuwe situatie. Als ik zelf vind dat mijn reactie minder is voor het afstuderen is het doel behaald. 
         </li>
-        <li>Voor het einde van de minor wil ik een eigen website te bouwen. Het lijkt mij zeer interessant om de programmeertaal achter een website te snappen.  Ik wil voor het einde van de minor dat ik programmeercodes begrijp en een eigen website opbouw, waarin onder andere mijn portfolio staat, door aan de hand van de informatie uit Smart Connection een eigen website op te bouwen, waarin onder andere mijn portfolio staat.
+        <li>Voor het einde van de minor wil ik een eigen website bouwen. Het lijkt mij zeer interessant om de programmeertaal achter een website te snappen.  Ik wil voor het einde van de minor dit weten en met die kennis een eigen website opbouwen waarin onder andere mijn portfolio staat, door de informatie uit Smart Connection toe te passen. 
         </li>
-        <li>Voor het einde van de minor wil ik meer ervaring krijgen over automatisering en technologieën op het gebied van Smart Industry. Door het toepassen van automatisering in de praktijk en door nieuwe inzichten van technologie op het gebied van Smart Industry te leren kennen, zodat ik deze toe kan passen, om mijzelf te kunnen specialiseren naar een Technisch Bedrijfskundige met meer technische achtergrond. Ik wil voor het einde van de minor deze doelstelling behalen, door tijdens de minor goed mee te doen met de opdrachten, van onder andere Smart Start, om zo tot nieuwe inzichten en technologieën te komen. 
+        <li>Voor het einde van de minor wil ik meer ervaring krijgen over automatisering en technologieën op het gebied van Smart Industry. Door deskresearch te doen over de verschillende technologieën op het gebied van Smart Industry en door dit in de praktijk toe te passen wil ik het doel bereiken. Deze ervaring wil ik toe passen in de toekomst, om mijzelf te kunnen specialiseren naar een Technisch Bedrijfskundige met meer technische achtergrond.  
         </li>
         </ul>
     </div>
 
 </div>
 
-
+<script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
 </body>
 </html>
