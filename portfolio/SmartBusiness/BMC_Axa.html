@@ -11,11 +11,29 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="../index.html">Ga terug</a>
-        
+
+    
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Andere Smart Business artikelen</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="BMC_Axa.html">Businessmodel Canvas AXA</a>
+              <a href="BMC_IoTSolutionsPartner.html">Businessmodel Canvas IoT Solutions Partner</a>
+              <a href="Introductiefilm.html">Introductiefilm</a>
+              <a href="Kleurentest.html">Kleurentest</a>
+              <a href="Masterclass_Master_Your_Own_Mind_and_Own_Your_Life.html">Masterclass Master Your Own Mind and Own Your Life</a>
+              <a href="Mijn_Smart_Journey.html">Mijn Smart Journey</a>
+              <a href="TOM_Workshop.html">TOM Workshop</a>
+              <a href="Verzekeraars_Kosten_Verlagen_Door_IoT.html">Hoe kunnen verzekeraars met behulp van Internet of Things hun kosten verlagen en aanvullende business generen</a>
+              <a href="Vijf_Parameters_van_Lean.html">Vijf Parameters van Lean</a>
+              <a href="Workshop_Agile.html">Workshop Agile</a>
+            </div>
+          </div>
+
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav nav" role="tablist">
-                <a class="nav-item nav-link" data-toggle="tab" href="#business" id="business-tab" role="tab" aria-controls="business" aria-selected="true"><i class="fa fa-handshake-o"></i> Business</a>
-            
+                <a class="nav-item nav-link" data-toggle="tab" href="" id="business-tab" role="tab" aria-controls="business" aria-selected="true"><i class="fa fa-handshake-o"></i>Business</a>
+    
+
             </div>
         </div>
     </nav>
@@ -66,5 +84,27 @@
               </div>
 
             </div>
+
+<script>
+/* When the user clicks on the button,
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+                // Close the dropdown menu if the user clicks outside of it
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                }                
+</script>
 </body>
 </html>
