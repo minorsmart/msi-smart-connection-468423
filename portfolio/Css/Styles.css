@@ -91,6 +91,20 @@
     
 }
 
+.Subtab{
+  box-sizing: border-box center;
+  content: center;
+  width: 80%;
+  margin:auto;
+  overflow:hidden;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  background-color: white;
+  padding-left: 2%;
+  padding-right: 2%;
+  
+}
+
 .PlantWaterSystem{
   box-sizing: border-box center;
   content: center;
